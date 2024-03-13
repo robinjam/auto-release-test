@@ -1,0 +1,8 @@
+on: workflow_dispatch
+
+jobs:
+  release_gem:
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: alphagov/govuk-infrastructure/.github/workflows/autorelease-rubygem.yml@autorelease-rubygems
