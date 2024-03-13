@@ -1,0 +1,7 @@
+on: workflow_dispatch
+
+jobs:
+  release_gem:
+    uses: alphagov/govuk-infrastructure/.github/workflows/autorelease-rubygem.yml@autorelease-rubygems
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
